@@ -1,0 +1,138 @@
+/* Canyon Font */
+@import url(fonts/CanyonRFont/CanyonRFont.css);
+
+/* TYPOGRAPHIE */
+body {
+  font-family: "CanyonR";
+  font-weight: 100;
+  color: #ddd;
+  /* background-color: rgb(20, 29, 38); */
+  margin: auto;
+  max-width: 80rem;
+  padding: 10%;
+  background: #ddd;
+  background-image: linear-gradient(90deg, rgb(194, 194, 72), rgb(7, 23, 87));
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.row > * {
+  flex: 1;
+}
+
+.stars {
+  font-style: italic;
+}
+
+.titre {
+  font-size: 40pt;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline overline #ffffff;
+}
+
+/* UTILITAIRES */
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  align-items: center;
+}
+
+/* mep header */
+header {
+  min-height: auto;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+/* centrer contenus du header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container {
+  max-width: 30rem;
+  color: rgb(255, 255, 255);
+}
+
+header .container img {
+  filter: invert(100%);
+}
+
+header {
+  position: relative;
+}
+#bkgDecoVid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chapeau {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  opacity: 50%;
+
+  /* background-color: #ddd; */
+  /* margin-bottom: 100px; */
+}
+
+.container {
+  opacity: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer {
+  background: #ddd;
+}
+
+.cooperation {
+  text-align: center;
+  /* margin-top: 100px; */
+  padding-top: 300px;
+}
+
+.canyon {
+  filter: invert(100%);
+  margin-top: 50px;
+}
